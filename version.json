@@ -1,61 +1,61 @@
 {
-  "version": "1.5.0+11",
-  "versionName": "1.5.0",
-  "build": 11,
-  "versionCode": 10500,
+  "version": "1.5.1+12",
+  "versionName": "1.5.1",
+  "build": 12,
+  "versionCode": 10501,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-09-27T04:32:34Z",
-  "notes": "**新增：下载视频时把弹幕一起存下来** —— 离线播放也能看到弹幕了。下载列表里会显示这一集存了多少条弹幕。\n\n**弹幕抓取失败不会影响视频下载**：视频照样下载成功，只是这一集离线时没有弹幕，播放时会明确提示。\n\n> 已经下载过的剧集不会自动补弹幕，删掉重新下载一次即可。",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/app-v1.5.0-11",
+  "publishedAt": "2026-09-27T05:38:50Z",
+  "notes": "**修复：站源卡死时下载不再被弹幕拖住** —— 抓弹幕现在有 3 分钟总预算，超时就当这一集没抓到弹幕（视频早已下载好，不受影响）。\n\n**上一版功能与行为没有变化**：这一版只改了这一个地方。",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/app-v1.5.1-12",
   "assets": [
     {
       "edition": "aiju",
       "abi": "arm64-v8a",
-      "name": "aiju-1.5.0+11-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/aiju-1.5.0%2B11-arm64-v8a.apk",
-      "size": 31284006,
-      "sha256": "155f207bd2fe8e7134bd0edee453f6be1cbb329a5f9216445609db78c16333f2"
+      "name": "aiju-1.5.1+12-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/aiju-1.5.1%2B12-arm64-v8a.apk",
+      "size": 31283558,
+      "sha256": "65584314fb254daf4ab047a8d2cfec39bd8c393c983f565eebb37917fa0eca25"
     },
     {
       "edition": "aiju",
       "abi": "armeabi-v7a",
-      "name": "aiju-1.5.0+11-armeabi-v7a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/aiju-1.5.0%2B11-armeabi-v7a.apk",
-      "size": 39806798,
-      "sha256": "315105a25588a99c2c370cc50e66d038e56eb476715d422ebe2b0c0f11d3bf75"
+      "name": "aiju-1.5.1+12-armeabi-v7a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/aiju-1.5.1%2B12-armeabi-v7a.apk",
+      "size": 39807178,
+      "sha256": "136d51ca5fde6d75286c999e02c9a71ef6f4aaaea587aa2157867bdeef19b78f"
     },
     {
       "edition": "aiju",
       "abi": "x86_64",
-      "name": "aiju-1.5.0+11-x86_64.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/aiju-1.5.0%2B11-x86_64.apk",
-      "size": 32937391,
-      "sha256": "9770b946a1397fbe5b8479347920090d5e1f3a8327e16e7bb0965df5d11edce3"
+      "name": "aiju-1.5.1+12-x86_64.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/aiju-1.5.1%2B12-x86_64.apk",
+      "size": 32937767,
+      "sha256": "0629b649c4b8140cb0b22d25abbd7b735f9c89986f7ad799abbb999841b45b83"
     },
     {
       "edition": "duanjuzhijia",
       "abi": "arm64-v8a",
-      "name": "duanjuzhijia-1.5.0+11-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/duanjuzhijia-1.5.0%2B11-arm64-v8a.apk",
-      "size": 31283318,
-      "sha256": "a0b575574e0cf96b6372be8b8951459a0b904b56de5263289ed8f630b5ece2da"
+      "name": "duanjuzhijia-1.5.1+12-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/duanjuzhijia-1.5.1%2B12-arm64-v8a.apk",
+      "size": 31282778,
+      "sha256": "eb4c6f5d3725d46d2892b788d00ae763ae72f1fbb4c05a855cb9670fcb681126"
     },
     {
       "edition": "duanjuzhijia",
       "abi": "armeabi-v7a",
-      "name": "duanjuzhijia-1.5.0+11-armeabi-v7a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/duanjuzhijia-1.5.0%2B11-armeabi-v7a.apk",
-      "size": 39806186,
-      "sha256": "162e7dba6b4d3616a55b6d51c3d8b6fe9d8ba848362967c9c4974e0545e26f73"
+      "name": "duanjuzhijia-1.5.1+12-armeabi-v7a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/duanjuzhijia-1.5.1%2B12-armeabi-v7a.apk",
+      "size": 39806466,
+      "sha256": "5e19befd59c1a93ea04b26fba26cbbfe0324e97b184cae848671e9ab75590d4f"
     },
     {
       "edition": "duanjuzhijia",
       "abi": "x86_64",
-      "name": "duanjuzhijia-1.5.0+11-x86_64.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.0-11/duanjuzhijia-1.5.0%2B11-x86_64.apk",
-      "size": 32936615,
-      "sha256": "0cc7f5bbbda5d027cbe8f81b53f36c05cba873693efb8bd72f7c1a50f4432b1d"
+      "name": "duanjuzhijia-1.5.1+12-x86_64.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.5.1-12/duanjuzhijia-1.5.1%2B12-x86_64.apk",
+      "size": 32936859,
+      "sha256": "89cdc3d615e5e600464f4c90d97097f8f3f728e1e7004d9ed920f87b745e673e"
     }
   ]
 }
