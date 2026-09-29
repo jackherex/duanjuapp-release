@@ -1,27 +1,27 @@
 {
-  "version": "1.0.7+8",
-  "versionName": "1.0.7",
-  "build": 8,
-  "versionCode": 10007,
+  "version": "1.0.9+10",
+  "versionName": "1.0.9",
+  "build": 10,
+  "versionCode": 10009,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-09-29T11:11:29Z",
-  "notes": "**本次更新（1.0.7+8）** —— 手机版四处修复 + 检查更新：\n\n**① 顶栏「榜单」不再是一条长胶囊** —— 之前手机上它把站名那一格撑得很长，现在收成一颗图标按钮（旁边是返回键），给搜索框腾出地方。顺带修好了右侧那几颗按钮不贴右边的问题。\n\n**② 顶栏不再显示「榜单 › 最近观看」这种错误路径** —— 以前点「最近观看 / 下载 / 追剧」，顶上都显示成挂在「榜单」下面。现在手机上不画这一串路径，底部导航本来就高亮了当前页。\n\n**③ 详情页不用拖到底才看到集数** —— 以前海报区一个人吃掉六成屏高，集数条被挤到屏幕外面，要滑一整屏才露头；底部还有一段虚化把内容边界糊掉。现在海报区最高只占半屏，虚化带收到 24dp，集数条和分集网格提到「标签 / 简介」之前，第一屏就能看到。海报仍是完整的 2:3，只是按可用高度缩放，不会被压扁。\n\n**④ 检查更新能用了** —— 之前是逐个试更新地址，国内连 GitHub 常常是「连不上也不报错」，第一个地址就把超时吃满，后面的镜像根本轮不到，所以只看到一句「暂时查不到更新」。现在 8 个地址同时发、谁先回用谁；万一都失败，会把每个地址失败在哪一步列出来；安装包另外给了 3 个国内镜像地址，界面上有「换一个下载地址」可以换。\n\n---\n\n**v2 整体说明** —— 之前是把桌面版压扁，v2 按手机竖屏重新排：\n\n**首页改成多条横滑轨道** —— 顶部大图（hero）→「继续观看」→ 各分类轨道（热播、新剧…）→ 分类筛选。每条轨道左右横滑浏览，右上角「›」进入该分类的完整列表。轨道逐条加载、渐进出现，不会一起转圈。\n\n**海报一行 3 个**（此前只有 2 个）—— 轨道卡片收到 104dp、网格改 3 列，对齐 LinPlayer 手机版那种排版：390dp 竖屏上轨道「3 张整卡 + 一条边」，一眼看出能横滑。\n\n**首页顶栏最左边是「榜单」入口** —— 原来那里是站名，纯占位置；站名本来也只在详情页有用。站源切换在宽屏仍在原位。\n\n**右上角「更多」只剩三项**：排序与筛选、设置、界面模式。榜单、多选下载、站源管理、用户管理、关于都撤出 —— 站源管理、用户管理与「关于短剧之家 v2」移进了设置页；多选下载仍在「长按海报」里。\n\n**详情页**：顶栏去掉「站名 › 剧名」面包屑，只留一颗返回键；海报按 2:3 完整显示不裁切；剧名挪到海报下方。\n\n**播放页**：播放控件从桌面尺寸缩到手机尺寸，窄到 354dp 仍能一行放得下；屏宽不足 354dp 时自动收起「上一集 / 下一集」。倍速 / 清晰度 / 定时关闭的面板改成整宽贴底，不再浮在半空。\n\n**「设置与备份」改名「设置」**，WebDAV 同步并入「设备互联」同一组。",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.7-8",
+  "publishedAt": "2026-09-29T15:15:53Z",
+  "notes": "**本次更新（1.0.9+10）** —— 封面不再闪没、首页五行轨道、榜单重做、观看记录会同步了：\n\n**① 封面「本来有，突然不见，等好久才出来」修好了** —— 以前同一张海报会被反复重下：站源的封面地址带时效签名，剧库一刷新地址就变，而封面卡偏偏是拿地址当身份标记的，于是卡片被整个重建、已经显示的图被清掉、再联网下一遍。现在同一部剧永远复用同一张卡，地址抖动不再影响显示。\n\n**② 首页改成五行，热门剧排第一** —— 从上到下：**热门剧**（红果总热播榜）/ 漫剧 / 真人剧 / AI 剧 / 其他推荐。每行都是一条能左右滑的海报，站源里没有的分类不会留空行。**手机竖屏不再有底部大网格**，首页就是这五行，滑动选择、点进去看。\n\n**③ 红果榜单界面重做** —— 前三名改成「领奖台」：排成 2 · 1 · 3，第一名整体抬高，名次数字用金银铜三色压在海报左下角。第四名往后不再是一条条卡片框、也没有分隔线，改成淡色底纹，名次数字越靠后越淡。\n\n**④ 「最近观看」现在会同步了** —— 以前只有**加入追剧**的剧才会同步，没追剧、只是看过几集的记录从来没进过同步集。现在观看记录一起同步，局域网与 WebDAV 两条通道都生效。顺带说明：以前你看到「只有加入了在看 / 追剧才会同步」不是错觉，就是这个问题。\n\n---\n\n**v2 整体说明** —— 之前是把桌面版压扁，v2 按手机竖屏重新排：\n\n**首页改成多条横滑轨道** —— 顶部大图（hero）→「继续观看」→ 各分类轨道（热播、新剧…）→ 分类筛选。每条轨道左右横滑浏览，右上角「›」进入该分类的完整列表。轨道逐条加载、渐进出现，不会一起转圈。\n\n**海报一行 3 个**（此前只有 2 个）—— 轨道卡片收到 104dp、网格改 3 列，对齐 LinPlayer 手机版那种排版：390dp 竖屏上轨道「3 张整卡 + 一条边」，一眼看出能横滑。\n\n**首页顶栏最左边是「榜单」入口** —— 原来那里是站名，纯占位置；站名本来也只在详情页有用。站源切换在宽屏仍在原位。\n\n**右上角「更多」只剩三项**：排序与筛选、设置、界面模式。榜单、多选下载、站源管理、用户管理、关于都撤出 —— 站源管理、用户管理与「关于短剧之家 v2」移进了设置页；多选下载仍在「长按海报」里。\n\n**详情页**：顶栏去掉「站名 › 剧名」面包屑，只留一颗返回键；海报按 2:3 完整显示不裁切；剧名挪到海报下方。\n\n**播放页**：播放控件从桌面尺寸缩到手机尺寸，窄到 354dp 仍能一行放得下；屏宽不足 354dp 时自动收起「上一集 / 下一集」。倍速 / 清晰度 / 定时关闭的面板改成整宽贴底，不再浮在半空。\n\n**「设置与备份」改名「设置」**，WebDAV 同步并入「设备互联」同一组。",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.9-10",
   "assets": [
     {
       "edition": "duanjuzhijia2",
       "abi": "arm64-v8a",
-      "name": "duanjuzhijia2-1.0.7+8-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.7-8/duanjuzhijia2-1.0.7%2B8-arm64-v8a.apk",
+      "name": "duanjuzhijia2-1.0.9+10-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.9-10/duanjuzhijia2-1.0.9%2B10-arm64-v8a.apk",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.7-8/duanjuzhijia2-1.0.7%2B8-arm64-v8a.apk",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.7-8/duanjuzhijia2-1.0.7%2B8-arm64-v8a.apk",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.7-8/duanjuzhijia2-1.0.7%2B8-arm64-v8a.apk",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.7-8/duanjuzhijia2-1.0.7%2B8-arm64-v8a.apk"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.9-10/duanjuzhijia2-1.0.9%2B10-arm64-v8a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.9-10/duanjuzhijia2-1.0.9%2B10-arm64-v8a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.9-10/duanjuzhijia2-1.0.9%2B10-arm64-v8a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.9-10/duanjuzhijia2-1.0.9%2B10-arm64-v8a.apk"
       ],
-      "size": 31508586,
-      "sha256": "a27de42bcad7826d88d828bd002685cc70d7079ad26b43f4c52693454c7c5833"
+      "size": 31510918,
+      "sha256": "71827de69d44c4f2aebb086b32dbaf7319909eb4ef1dbfa22912235ab9026cf6"
     }
   ]
 }
