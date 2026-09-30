@@ -1,37 +1,55 @@
 {
-  "version": "1.6.1+14",
-  "versionName": "1.6.1",
-  "build": 14,
-  "versionCode": 10601,
+  "version": "1.6.2+15",
+  "versionName": "1.6.2",
+  "build": 15,
+  "versionCode": 10602,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-09-28T07:54:29Z",
+  "publishedAt": "2026-09-30T06:54:44Z",
   "notes": "**新增：定时自动同步 WebDAV** —— 连上以后三条路径都会自动同步：改完收藏/追剧 700ms 内立刻传、按设置里的周期（默认 15 分钟）定时兜底、退出播放页立刻传一次。不用再手动点。\n\n**首页同步状态条改管两条通道** —— 只连了 WebDAV 也会显示「WebDAV 已连接成功」，不再误报「设备互联未配对」；局域网没连上时也不再暴露底层报错。\n\n**冲突处理** —— 两台设备同时改同一部剧时，被覆盖的那次改动进「冲突记录」等裁决，局域网与 WebDAV 共用同一份列表（设置 → 冲突记录）。\n\n本次只发 **短剧之家**（三种架构）。爱剧之家不再随版本发布；Windows 版维持 1.0.1+2。",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/app-v1.6.1-14",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/app-v1.6.2-15",
   "assets": [
     {
       "edition": "duanjuzhijia",
       "abi": "arm64-v8a",
-      "name": "duanjuzhijia-1.6.1+14-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.1-14/duanjuzhijia-1.6.1%2B14-arm64-v8a.apk",
-      "size": 31383202,
-      "sha256": "7f11f01a0b9bc57a1b3fb09cbe7f449aa5dc23231d5347ea1bd9c86ef78f2f85"
+      "name": "duanjuzhijia-1.6.2+15-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-arm64-v8a.apk",
+      "urls": [
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-arm64-v8a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-arm64-v8a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-arm64-v8a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-arm64-v8a.apk"
+      ],
+      "size": 31411554,
+      "sha256": "1c3c4755067bc7bfc7eeed1cc9d5547e0ed2c0d7162b75c3e1436e47003ad41b"
     },
     {
       "edition": "duanjuzhijia",
       "abi": "armeabi-v7a",
-      "name": "duanjuzhijia-1.6.1+14-armeabi-v7a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.1-14/duanjuzhijia-1.6.1%2B14-armeabi-v7a.apk",
-      "size": 39901074,
-      "sha256": "17a761cd97282f9176a9e72c94b5a27abb5f9ecc4fbf65313c92dd0600601f17"
+      "name": "duanjuzhijia-1.6.2+15-armeabi-v7a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-armeabi-v7a.apk",
+      "urls": [
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-armeabi-v7a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-armeabi-v7a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-armeabi-v7a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-armeabi-v7a.apk"
+      ],
+      "size": 39933446,
+      "sha256": "c5d06845b26a3df5326fc8214560716922f3588468485f4f93445a79e3a021a9"
     },
     {
       "edition": "duanjuzhijia",
       "abi": "x86_64",
-      "name": "duanjuzhijia-1.6.1+14-x86_64.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.1-14/duanjuzhijia-1.6.1%2B14-x86_64.apk",
-      "size": 33031087,
-      "sha256": "a7f2968f86d73d34864c279be5e2861a5134bdfd59c050fe3a43e90e9302100f"
+      "name": "duanjuzhijia-1.6.2+15-x86_64.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-x86_64.apk",
+      "urls": [
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-x86_64.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-x86_64.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-x86_64.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/app-v1.6.2-15/duanjuzhijia-1.6.2%2B15-x86_64.apk"
+      ],
+      "size": 33063439,
+      "sha256": "dca1daf9778610bf6d5e5c8620b3b1680d034a45da27f173c60c0c53eb758cb4"
     }
   ]
 }
