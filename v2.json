@@ -1,41 +1,41 @@
 {
-  "version": "1.0.11+12",
-  "versionName": "1.0.11",
-  "build": 12,
-  "versionCode": 10011,
+  "version": "1.0.12+13",
+  "versionName": "1.0.12",
+  "build": 13,
+  "versionCode": 10012,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-09-30T06:56:04Z",
-  "notes": "**本次更新（1.0.10+11）** —— 电脑版现在能自己更新自己了，手机版搜索修好了：\n\n**① 电脑版自动更新 + 自动重启** —— 以前电脑版点「更新」只会打开浏览器让你自己下载、自己解压、自己替换。现在改成软件内完成：**下载 → 软件自动关闭 → 自动替换 → 自动重新打开**，中间不用你动手。\n\n> ⚠️ 正在运行的 exe 文件是被系统锁住的，程序没法覆盖自己。所以做法是：程序先退出，由一个临时脚本把新文件拷进去、再把程序启动起来。过程中你会看到软件关掉又自己开 —— 那是正常的，不是崩了。\n\n**② 手机版搜索：搜出来是空白的** —— 手机竖屏下，搜索结果的那张网格被一个「窄屏不画网格」的判断整段跳过了，而窄屏首页的内容又都是「搜索时隐藏」的，两块一叠加，搜索时就只剩一张空页。现在窄屏搜索会照常出结果网格。\n\n**③ 「打开下载页」的逃生门一直留着** —— 自动更新有失败面（网络、磁盘空间、杀毒软件拦脚本）。所以「打开下载页」和「复制链接」这两颗按钮没有被拿掉：自动更新万一没成，还能走老路手动装。\n\n---\n\n**上一版（1.0.9+10）** —— 封面不再闪没、首页五行轨道、榜单重做、观看记录会同步了：\n\n**① 封面「本来有，突然不见，等好久才出来」修好了** —— 以前同一张海报会被反复重下：站源的封面地址带时效签名，剧库一刷新地址就变，而封面卡偏偏是拿地址当身份标记的，于是卡片被整个重建、已经显示的图被清掉、再联网下一遍。现在同一部剧永远复用同一张卡，地址抖动不再影响显示。\n\n**② 首页改成五行，热门剧排第一** —— 从上到下：**热门剧**（红果总热播榜）/ 漫剧 / 真人剧 / AI 剧 / 其他推荐。每行都是一条能左右滑的海报，站源里没有的分类不会留空行。**手机竖屏不再有底部大网格**，首页就是这五行，滑动选择、点进去看。\n\n**③ 红果榜单界面重做** —— 前三名改成「领奖台」：排成 2 · 1 · 3，第一名整体抬高，名次数字用金银铜三色压在海报左下角。第四名往后不再是一条条卡片框、也没有分隔线，改成淡色底纹，名次数字越靠后越淡。\n\n**④ 「最近观看」现在会同步了** —— 以前只有**加入追剧**的剧才会同步，没追剧、只是看过几集的记录从来没进过同步集。现在观看记录一起同步，局域网与 WebDAV 两条通道都生效。顺带说明：以前你看到「只有加入了在看 / 追剧才会同步」不是错觉，就是这个问题。\n\n---\n\n**v2 整体说明** —— 之前是把桌面版压扁，v2 按手机竖屏重新排：\n\n**首页改成多条横滑轨道** —— 顶部大图（hero）→「继续观看」→ 各分类轨道（热播、新剧…）→ 分类筛选。每条轨道左右横滑浏览，右上角「›」进入该分类的完整列表。轨道逐条加载、渐进出现，不会一起转圈。\n\n**海报一行 3 个**（此前只有 2 个）—— 轨道卡片收到 104dp、网格改 3 列，对齐 LinPlayer 手机版那种排版：390dp 竖屏上轨道「3 张整卡 + 一条边」，一眼看出能横滑。\n\n**首页顶栏最左边是「榜单」入口** —— 原来那里是站名，纯占位置；站名本来也只在详情页有用。站源切换在宽屏仍在原位。\n\n**右上角「更多」只剩三项**：排序与筛选、设置、界面模式。榜单、多选下载、站源管理、用户管理、关于都撤出 —— 站源管理、用户管理与「关于短剧之家 v2」移进了设置页；多选下载仍在「长按海报」里。\n\n**详情页**：顶栏去掉「站名 › 剧名」面包屑，只留一颗返回键；海报按 2:3 完整显示不裁切；剧名挪到海报下方。\n\n**播放页**：播放控件从桌面尺寸缩到手机尺寸，窄到 354dp 仍能一行放得下；屏宽不足 354dp 时自动收起「上一集 / 下一集」。倍速 / 清晰度 / 定时关闭的面板改成整宽贴底，不再浮在半空。\n\n**「设置与备份」改名「设置」**，WebDAV 同步并入「设备互联」同一组。",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.11-12",
+  "publishedAt": "2026-09-30T08:14:32Z",
+  "notes": "**本次更新（1.0.12+13）** —— 上一个版本电脑版还是收不到更新提示，这一版修好了：\n\n**① 电脑版的「检查更新」一直说有新版本，点开却只有一个手机包** —— 两个独立的原因叠在一起，这次都修了：\n\n- **更新清单里根本没有电脑包**。发布时电脑版的安装包其实传上去了，但生成清单的那一步只往清单里写手机包，电脑包被漏掉了。所以「检查更新」能看到的只有手机版。\n- **客户端的挑包逻辑在电脑上直接放弃**。它按「本机支持的 CPU 架构列表」去找对应安装包，而电脑端没有这个概念、那个列表永远是空的 —— 空列表一循环就立刻返回「没有可用的包」。即使清单里写了电脑包，也挑不出来。\n\n> ⚠️ 这两处互不相干，只修一个都不通。第一处决定「清单里有没有」，第二处决定「能不能挑出来」。\n\n**② 清单的推送加了自检** —— 以前推送完就算成功，推失败、或者推上去了但线上还是旧内容，都不会报错。现在推完会**回头把线上的清单读一遍逐项核对**（版本号、下载地址、每个包的大小和校验值），对不上就明确报错。\n\n> ⚠️ 这不是多余的：清单地址走的是 CDN，**有缓存**。刚推上去那几分钟，读回来的很可能还是旧内容 —— 光看「读取成功」会得出相反结论，所以判据必须绕开缓存去问源站。\n\n---\n\n**上一版（1.0.10+11）** —— 电脑版现在能自己更新自己了，手机版搜索修好了：\n\n**① 电脑版自动更新 + 自动重启** —— 以前电脑版点「更新」只会打开浏览器让你自己下载、自己解压、自己替换。现在改成软件内完成：**下载 → 软件自动关闭 → 自动替换 → 自动重新打开**，中间不用你动手。\n\n> ⚠️ 正在运行的 exe 文件是被系统锁住的，程序没法覆盖自己。所以做法是：程序先退出，由一个临时脚本把新文件拷进去、再把程序启动起来。过程中你会看到软件关掉又自己开 —— 那是正常的，不是崩了。\n\n**② 手机版搜索：搜出来是空白的** —— 手机竖屏下，搜索结果的那张网格被一个「窄屏不画网格」的判断整段跳过了，而窄屏首页的内容又都是「搜索时隐藏」的，两块一叠加，搜索时就只剩一张空页。现在窄屏搜索会照常出结果网格。\n\n**③ 「打开下载页」的逃生门一直留着** —— 自动更新有失败面（网络、磁盘空间、杀毒软件拦脚本）。所以「打开下载页」和「复制链接」这两颗按钮没有被拿掉：自动更新万一没成，还能走老路手动装。\n\n---\n\n**上一版（1.0.9+10）** —— 封面不再闪没、首页五行轨道、榜单重做、观看记录会同步了：\n\n**① 封面「本来有，突然不见，等好久才出来」修好了** —— 以前同一张海报会被反复重下：站源的封面地址带时效签名，剧库一刷新地址就变，而封面卡偏偏是拿地址当身份标记的，于是卡片被整个重建、已经显示的图被清掉、再联网下一遍。现在同一部剧永远复用同一张卡，地址抖动不再影响显示。\n\n**② 首页改成五行，热门剧排第一** —— 从上到下：**热门剧**（红果总热播榜）/ 漫剧 / 真人剧 / AI 剧 / 其他推荐。每行都是一条能左右滑的海报，站源里没有的分类不会留空行。**手机竖屏不再有底部大网格**，首页就是这五行，滑动选择、点进去看。\n\n**③ 红果榜单界面重做** —— 前三名改成「领奖台」：排成 2 · 1 · 3，第一名整体抬高，名次数字用金银铜三色压在海报左下角。第四名往后不再是一条条卡片框、也没有分隔线，改成淡色底纹，名次数字越靠后越淡。\n\n**④ 「最近观看」现在会同步了** —— 以前只有**加入追剧**的剧才会同步，没追剧、只是看过几集的记录从来没进过同步集。现在观看记录一起同步，局域网与 WebDAV 两条通道都生效。顺带说明：以前你看到「只有加入了在看 / 追剧才会同步」不是错觉，就是这个问题。\n\n---\n\n**v2 整体说明** —— 之前是把桌面版压扁，v2 按手机竖屏重新排：\n\n**首页改成多条横滑轨道** —— 顶部大图（hero）→「继续观看」→ 各分类轨道（热播、新剧…）→ 分类筛选。每条轨道左右横滑浏览，右上角「›」进入该分类的完整列表。轨道逐条加载、渐进出现，不会一起转圈。\n\n**海报一行 3 个**（此前只有 2 个）—— 轨道卡片收到 104dp、网格改 3 列，对齐 LinPlayer 手机版那种排版：390dp 竖屏上轨道「3 张整卡 + 一条边」，一眼看出能横滑。\n\n**首页顶栏最左边是「榜单」入口** —— 原来那里是站名，纯占位置；站名本来也只在详情页有用。站源切换在宽屏仍在原位。\n\n**右上角「更多」只剩三项**：排序与筛选、设置、界面模式。榜单、多选下载、站源管理、用户管理、关于都撤出 —— 站源管理、用户管理与「关于短剧之家 v2」移进了设置页；多选下载仍在「长按海报」里。\n\n**详情页**：顶栏去掉「站名 › 剧名」面包屑，只留一颗返回键；海报按 2:3 完整显示不裁切；剧名挪到海报下方。\n\n**播放页**：播放控件从桌面尺寸缩到手机尺寸，窄到 354dp 仍能一行放得下；屏宽不足 354dp 时自动收起「上一集 / 下一集」。倍速 / 清晰度 / 定时关闭的面板改成整宽贴底，不再浮在半空。\n\n**「设置与备份」改名「设置」**，WebDAV 同步并入「设备互联」同一组。",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.12-13",
   "assets": [
     {
       "edition": "duanjuzhijia2",
       "abi": "arm64-v8a",
-      "name": "duanjuzhijia2-1.0.11+12-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-arm64-v8a.apk",
+      "name": "duanjuzhijia2-1.0.12+13-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-arm64-v8a.apk",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-arm64-v8a.apk",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-arm64-v8a.apk",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-arm64-v8a.apk",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-arm64-v8a.apk"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-arm64-v8a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-arm64-v8a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-arm64-v8a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-arm64-v8a.apk"
       ],
-      "size": 31532894,
-      "sha256": "4f0d3ff1b5bd9e091d0cf765d667bc8ffa4b34561d001624e3d0567a188d3b66"
+      "size": 31533010,
+      "sha256": "6e3e1fb0c519d8f32712fa05c9398e23f33fb84bce634adca2ea824ab0672b7c"
     },
     {
       "edition": "duanjuzhijia2",
       "abi": "windows-x64",
-      "name": "duanjuzhijia2-1.0.11+12-windows-x64.zip",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
+      "name": "duanjuzhijia2-1.0.12+13-windows-x64.zip",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-windows-x64.zip",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-windows-x64.zip",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-windows-x64.zip",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-windows-x64.zip",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.12-13/duanjuzhijia2-1.0.12%2B13-windows-x64.zip"
       ],
-      "size": 94980666,
-      "sha256": "8210eee103a30df0f029209d7bde4016f19685d2a6922d1e949c376eb438eaf0"
+      "size": 94981208,
+      "sha256": "40bc5d3e652966de6402df55b0be848baae45bf85408bd21d6d36be28650d2f2"
     }
   ]
 }
