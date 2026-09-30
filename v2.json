@@ -22,6 +22,20 @@
       ],
       "size": 31532894,
       "sha256": "4f0d3ff1b5bd9e091d0cf765d667bc8ffa4b34561d001624e3d0567a188d3b66"
+    },
+    {
+      "edition": "duanjuzhijia2",
+      "abi": "windows-x64",
+      "name": "duanjuzhijia2-1.0.11+12-windows-x64.zip",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
+      "urls": [
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.11-12/duanjuzhijia2-1.0.11%2B12-windows-x64.zip"
+      ],
+      "size": 94980666,
+      "sha256": "8210eee103a30df0f029209d7bde4016f19685d2a6922d1e949c376eb438eaf0"
     }
   ]
 }
