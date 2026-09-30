@@ -1,27 +1,27 @@
 {
-  "version": "1.0.1+2",
-  "versionName": "1.0.1",
-  "build": 2,
-  "versionCode": 10001,
+  "version": "1.0.2+3",
+  "versionName": "1.0.2",
+  "build": 3,
+  "versionCode": 10002,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-09-30T04:25:50Z",
+  "publishedAt": "2026-09-30T06:56:31Z",
   "notes": "**本次更新（1.0.1+2）** —— 机顶盒现在可以自己更新了：\n\n**① 内置更新：点一下就能装** —— 以前 TV 版的「检查更新」用的是手机版那一套（打开浏览器下载），机顶盒上没有好用的文件管理器，下载完往往找不到安装包、也装不上。现在改成应用内完成：**下载 → 自动拉起系统安装界面 → 你点一次「安装」**。\n\n> ⚠️ Android 从 8.0 起就不允许应用静默安装，**任何**应用都得让用户点一次确认，所以最后那一下「安装」按钮躲不掉。但整条链路从「打开浏览器 → 找下载 → 找文件管理器 → 找到 APK」缩短到「点更新 → 点安装」。\n\n**② 首次可能要开一个开关** —— 如果系统里没允许过本应用「安装未知应用」，点更新会提示你去开启，界面上会直接给一颗「去开启权限」按钮，按一下就跳到本应用的那个开关页（不用自己翻设置菜单）。\n\n**③ 修掉了「TV 版检查更新读到的是手机版」** —— 之前 TV 版的更新通道接到了 **v2 手机版**的清单上，所以就算点了更新，下到的也是手机版安装包（ABI 不对，装不上；运气好装上了，界面也是手机版、遥控器没法用）。现在 TV 版有了**自己独立的一条更新通道** `tv.json`，只会下机顶盒专用的包。\n\n---\n\n**顺手带上的两处**（这两个是同一个问题的两条线索，一起修的）：\n\n**④ 手机版（v2）搜索：搜出来是空白的** —— 手机竖屏下，搜索结果的那张网格被一个「窄屏不画网格」的判断整段跳过了，而窄屏首页的内容又都是「搜索时隐藏」的，两块一叠加，搜索时就只剩一张空页。现在窄屏搜索会照常出结果网格。\n\n**⑤ 检测更新偶尔「打不开下载页」** —— 更新清单与安装包的下载地址在国内常常连不上（`github.com` 会跳到 `objects.githubusercontent.com`）。这次顺带把「换一个下载地址」和「复制链接」这两颗逃生按钮在所有形态下都保留着 —— 自动更新万一失败（网络、空间、系统拦），还能走老路手动装。\n\n---\n\n**硬件相关（本轮未做真机验证）**：TV 版固定出 **armeabi-v7a（32 位）**包 —— 不少机顶盒用的是 64 位芯片但只带 32 位用户空间，装 64 位包会失败。如果你这台是明确支持 64 位的，告诉我，我另出一版。",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/tv-app-v1.0.1-2",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/tv-app-v1.0.2-3",
   "assets": [
     {
       "edition": "duanjuzhijiatv",
       "abi": "armeabi-v7a",
-      "name": "duanjuzhijiatv-1.0.1+2-armeabi-v7a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.1-2/duanjuzhijiatv-1.0.1%2B2-armeabi-v7a.apk",
+      "name": "duanjuzhijiatv-1.0.2+3-armeabi-v7a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.2-3/duanjuzhijiatv-1.0.2%2B3-armeabi-v7a.apk",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.1-2/duanjuzhijiatv-1.0.1%2B2-armeabi-v7a.apk",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.1-2/duanjuzhijiatv-1.0.1%2B2-armeabi-v7a.apk",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.1-2/duanjuzhijiatv-1.0.1%2B2-armeabi-v7a.apk",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.1-2/duanjuzhijiatv-1.0.1%2B2-armeabi-v7a.apk"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.2-3/duanjuzhijiatv-1.0.2%2B3-armeabi-v7a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.2-3/duanjuzhijiatv-1.0.2%2B3-armeabi-v7a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.2-3/duanjuzhijiatv-1.0.2%2B3-armeabi-v7a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/tv-app-v1.0.2-3/duanjuzhijiatv-1.0.2%2B3-armeabi-v7a.apk"
       ],
-      "size": 40009946,
-      "sha256": "5fdd5cd0cd15535a6497a676483d1552c7a287a4b127ca976a0ef90dad01e868"
+      "size": 40018506,
+      "sha256": "09c0d9819a029e390044e3aac7fdd2d694d2f8e5c5009e8d0fba091233fc2dfc"
     }
   ]
 }
