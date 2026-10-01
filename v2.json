@@ -1,43 +1,43 @@
 {
-  "version": "1.0.17+18",
-  "versionName": "1.0.17",
-  "build": 18,
-  "versionCode": 10017,
+  "version": "1.0.18+19",
+  "versionName": "1.0.18",
+  "build": 19,
+  "versionCode": 10018,
   "minVersion": "",
   "force": false,
-  "publishedAt": "2026-10-01T01:15:06Z",
-  "notes": "**手机版 1.0.17+18**\n\n- 修：首页滚动掉帧 —— 轮播那条进度每帧都在重画整块大图，现已圈到一小块里\n- 修：排行榜排版 —— 内容列居中限宽，领奖台恢复海报比例",
-  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.17-18",
+  "publishedAt": "2026-10-01T02:41:37Z",
+  "notes": "**手机版 1.0.18+19**\n\n- 本次为电脑版的更新修护同步发版，手机端功能与上一版一致",
+  "releaseUrl": "https://github.com/jackson977800/duanjuapp-release/releases/tag/v2-app-v1.0.18-19",
   "assets": [
     {
       "edition": "duanjuzhijia2",
       "abi": "arm64-v8a",
-      "name": "duanjuzhijia2-1.0.17+18-arm64-v8a.apk",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-arm64-v8a.apk",
+      "name": "duanjuzhijia2-1.0.18+19-arm64-v8a.apk",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-arm64-v8a.apk",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-arm64-v8a.apk",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-arm64-v8a.apk",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-arm64-v8a.apk",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-arm64-v8a.apk"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-arm64-v8a.apk",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-arm64-v8a.apk",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-arm64-v8a.apk",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-arm64-v8a.apk"
       ],
-      "size": 31605070,
-      "sha256": "6f74f7bc8a714f6550b0b4621bdbe85a4d1cefeaa4ebbaf5c46cb7e7459c4d2b",
-      "notes": "**手机版 1.0.17+18**\n\n- 修：首页滚动掉帧 —— 轮播那条进度每帧都在重画整块大图，现已圈到一小块里\n- 修：排行榜排版 —— 内容列居中限宽，领奖台恢复海报比例"
+      "size": 31605186,
+      "sha256": "fcad322e531eec5edf18b8d96da8a3132c9a4bb970b4bd3dcd4d93e73cefa723",
+      "notes": "**手机版 1.0.18+19**\n\n- 本次为电脑版的更新修护同步发版，手机端功能与上一版一致"
     },
     {
       "edition": "duanjuzhijia2",
       "abi": "windows-x64",
-      "name": "duanjuzhijia2-1.0.17+18-windows-x64.zip",
-      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-windows-x64.zip",
+      "name": "duanjuzhijia2-1.0.18+19-windows-x64.zip",
+      "url": "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-windows-x64.zip",
       "urls": [
-        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-windows-x64.zip",
-        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-windows-x64.zip",
-        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-windows-x64.zip",
-        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.17-18/duanjuzhijia2-1.0.17%2B18-windows-x64.zip"
+        "https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-windows-x64.zip",
+        "https://ghproxy.net/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-windows-x64.zip",
+        "https://gh-proxy.com/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-windows-x64.zip",
+        "https://ghfast.top/https://github.com/jackson977800/duanjuapp-release/releases/download/v2-app-v1.0.18-19/duanjuzhijia2-1.0.18%2B19-windows-x64.zip"
       ],
-      "size": 95066070,
-      "sha256": "8ac69a515ee9acd63d99caa11248fff648220c7b244349da4e119bb88a26c0e7",
-      "notes": "**电脑版 1.0.17+18**\n\n- 修：首页滚动掉帧 —— 轮播那条进度每帧都在重画整块大图，现已圈到一小块里\n- 修：排行榜在宽屏上不适配 —— 内容列改成居中限宽，领奖台恢复海报比例\n- 修：一键更新报「安装包文件名不合法」（1.0.16+17 已修，装过那一版就不用管）"
+      "size": 95066299,
+      "sha256": "f84f6bb1c4188a1d8bd378ee8161b0d39afc04d91cc42014cbc7db5b3fbd3277",
+      "notes": "**电脑版 1.0.18+19**\n\n- 修：一键更新点了没反应（闪退、不自动重开、打开还是旧版）—— 更新脚本里的中文路径编码不对，解压时找不到安装包\n- 修：同一处还有一处进程等待判定会被系统里另一个同名命令抢先，可能提前解压导致更新失败"
     }
   ]
 }
